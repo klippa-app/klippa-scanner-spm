@@ -2,18 +2,10 @@
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
-import Foundation
-
-let env = ProcessInfo.processInfo.environment
-
-let username = env["KLIPPA_USERNAME"] ?? ""
-let password = env["KLIPPA_PASSWORD"] ?? ""
-let url = env["KLIPPA_URL"] ?? "https://custom-ocr.klippa.com/sdk/ios/specrepo/"
-let version = env["KLIPPA_VERSION"] ?? "1.2.1"
 
 let klippaScannerXCFramework = Target.binaryTarget(
     name: "KlippaScanner",
-    url: "\(url)\(username)/\(password)/KlippaScanner/\(version)-xcframework.zip",
+    url: "https://custom-ocr.klippa.com/sdk/ios/spm/KlippaScanner/1.2.1-xcframework.zip",
     checksum: "1e6341fbe8a630a7949b6b13b24f0a7e9169cbdbfd328708784ce5182d4a6684"
 )
 
