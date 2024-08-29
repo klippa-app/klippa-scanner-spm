@@ -14,7 +14,8 @@ let package = Package(
     products: [
         .library(
             name: "KlippaScanner",
-            targets: ["KlippaScanner", "KlippaScannerSPM"]),
+            targets: ["KlippaScanner", "_KlippaScannerStub"]
+        ),
     ],
     targets: [
         klippaScannerXCFramework,
@@ -27,9 +28,7 @@ let package = Package(
         // with at least one source file.
         // https://github.com/apple/swift-package-manager/issues/6069
         .target(
-            name: "KlippaScannerSPM"),
-        .testTarget(
-            name: "KlippaScannerSPMTests",
-            dependencies: ["KlippaScannerSPM"]),
+            name: "_KlippaScannerStub"
+        )
     ]
 )
