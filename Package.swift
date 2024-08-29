@@ -10,10 +10,10 @@ let klippaScannerXCFramework = Target.binaryTarget(
 )
 
 let package = Package(
-    name: "KlippaScannerSPM",
+    name: "KlippaScanner",
     products: [
         .library(
-            name: "KlippaScannerSPM",
+            name: "KlippaScanner",
             targets: ["KlippaScanner", "KlippaScannerSPM"]),
     ],
     targets: [
