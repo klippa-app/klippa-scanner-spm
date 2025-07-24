@@ -35,4 +35,4 @@ Next you can follow https://developer.apple.com/documentation/xcode/adding-packa
 
 or you can add the following dependency to your Package.swift:
 
-`.package(url: "https://github.com/klippa-app/klippa-scanner-spm", from: "0.0.3")`
+`.package(url: "https://github.com/klippa-app/klippa-scanner-spm", from: "0.0.4")`
