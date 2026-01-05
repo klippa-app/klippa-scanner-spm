@@ -5,8 +5,8 @@ import PackageDescription
 
 let klippaScannerXCFramework = Target.binaryTarget(
     name: "KlippaScanner",
-    url: "https://test.custom-ocr.klippa.com/sdk/ios/spm/KlippaScanner/2.2.4-rc3-test-xcframework.zip",
-    checksum: "0779b67a9060e8cb605efed63726cf1021b6a3290029523c32b60f3e6580d439"
+    url: "https://custom-ocr.klippa.com/sdk/ios/spm/KlippaScanner/2.2.4-xcframework.zip",
+    checksum: "5ebd0e41178b82e9ee84bae57814e377c332eaa15ffaaa18c5a0dfd4c6790fba"
 )
 
 let package = Package(
